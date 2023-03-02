@@ -20,6 +20,5 @@ $seen_jokes = explode(',', $_COOKIE['seen_jokes']);
 $seen_jokes[] = $joke['id'];
 setcookie('seen_jokes', implode(',', $seen_jokes));
 
-// return response
 echo 'success';
 ?>
