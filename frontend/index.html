@@ -12,16 +12,17 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Mulish', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, sans-serif, 'Apple Color Emoji', 'Seogoe UI Emoji'
 }
 
 header{
     margin: auto;
     background-color: #fff;
-    width: 60%;
-    height: 75px;
+    width: 55%;
+    height: 85px;
     display: flex;
 }
+
 header div {
     flex: 1;
     align-self: center;
@@ -32,11 +33,16 @@ header div {
     float: right!important;
 }
 
+.logo{
+    display: block;
+    background: none;
+}
+
 header img{
     align-items: center;
     border-radius: 50%;
-    width: 45px;
-    height: 45px;
+    width: 55px;
+    height: 55px;
     background: whitesmoke;
 }
 
@@ -52,24 +58,28 @@ section {
 }
 
 .title h1 {
+    font-family: 'Mulish', sans-serif;
     vertical-align: middle;
-    color: #E2F5EA;
+    color: #FFFFFF;
     font-size: 26px;
+    
 }
 .title p {
     font-size: 11px;
-    color: #F1FAF5;
+    color: #FFFFFF;
 }
 
 .content {
     margin: auto;
     text-align: center;
     width: 50%;
-    letter-spacing: 0.2px;
     padding-top: 50px;
-    font-size: 13px;
+    font-size: 13.5px;
     margin-bottom: 40px;
+    color: #6d6d6d;
+    line-height: 21px;
 }
+
 
 .btn {
     background-color: #2C7EDB;
@@ -79,18 +89,21 @@ section {
     height: 30px;
     font-size: 11px;
     margin-top: 40px;
+    border-bottom: 1.5px solid #1c69c0;
 }
 
 .btn-dislike {
     background-color: #29B363;
+    
+    border-bottom: 1.5px solid #19984e;
 }
 
 footer p{
-    font-size: 11px; 
+    font-size: 10px; 
     text-align: center; 
-    padding: 15px;
+    padding-top: 20px;
     margin: auto;
-    width: 55%;
+    width: 50%;
 }
 
 </style>
@@ -98,7 +111,7 @@ footer p{
     <header>
         <div class="logo">
             <a href ="">
-                <img src="logo.png" class="logo"></img>
+                <img src="logo.png" alt="logo-img" class = "logo img"></img>
             </a>
         </div>
         <div class="user">
@@ -113,20 +126,20 @@ footer p{
             <p> If you joke wrong way, your teeth have to pay. (Serious)</p>
         </div>
         <div class="content">
-            <p style="text-align: justify;"  id="joke">
+            <p style="text-align: left;"  id="joke">
             
             </p>
             <br><br>
-            <hr style="width: 50%; margin-left: auto; margin-right: auto;  border: 1px solid #f8f8f8;">
+            <hr style="width: 80%; margin-left: auto; margin-right: auto;  border: 0.5px solid #f1f1f1;">
             <div id="message" style="color: red"></div>
             <button class="btn btn-like" id="btnLike" onclick="likeJoke()">This is Funny!</button> &nbsp;
             <button class="btn btn-dislike" id="btnDislike" onclick="dislikeJoke()">This is not funny.</button>
         </div>
     </section>
     <footer>
-        <hr>
-        <p style="color: #969696">This website is created as part of Hlsolutions program. The materials contained on this website are provided for general <br>information only and do not constitute any form ofadvice. HLS assumes no responsibility for the accuracy of any particular statement and <br> accepts no liability for any loss or damage which may arise from reliance on the information contained on this site.</p>
-        <p>Copyright 2021 HLS</p>
+        <hr style="color: #f5f5f5; border: 0.5px solid #dadada;" >
+        <p style="color: #bdbdbd">This website is created as part of Hlsolutions program. The materials contained on this website are provided for general <br>information only and do not constitute any form ofadvice. HLS assumes no responsibility for the accuracy of any particular statement and <br> accepts no liability for any loss or damage which may arise from reliance on the information contained on this site.</p>
+        <p style="color: #949494">Copyright 2021 HLS</p>
     </footer>
 
     <script src="./script.js"></script>
